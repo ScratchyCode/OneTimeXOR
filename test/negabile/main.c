@@ -1,6 +1,6 @@
 // Coded by Pietro Squilla
 // BETA per la crittografia negabile
-// Deve includere la creazione di un filesystem
+// edit sicurezza: bisogna creare un padding unificato per non permettere di dimostrare che ci sono file di dimensioni diverse dentro ad un container
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
