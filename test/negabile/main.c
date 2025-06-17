@@ -6,7 +6,7 @@
 #include <termios.h>
 #include <unistd.h>
 #include <openssl/evp.h>
-#include <openssl/rand.hh>
+#include <openssl/rand.h>
 #include <openssl/err.h>
 #include <openssl/params.h>
 #include <openssl/crypto.h>
