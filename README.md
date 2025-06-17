@@ -108,4 +108,6 @@ In entrambi i casi, verrà richiesta la password in modo sicuro (l'input non sar
 
 * **Password**: La sicurezza dell'intero sistema dipende in modo critico dalla **robustezza della password** scelta. Usare password lunghe, complesse e uniche.
 * **Metadati**: Questo programma cifra solo il *contenuto* dei file. Il nome del file, la sua dimensione e le date di modifica/creazione non vengono nascosti.
-* **Futuri upgrade**: Creazione e gestione di keyfile per l'uso del programma in pipeline, automatizzando tramite script tutte le operazioni.
+* **Futuri upgrade**:
+* *Creazione e gestione di keyfile per l'uso del programma in pipeline, automatizzando tramite script tutte le operazioni.
+* * Crittografia negabile
