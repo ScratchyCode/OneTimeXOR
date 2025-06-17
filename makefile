@@ -17,7 +17,7 @@ LDFLAGS = -Wl,-Bstatic -lssl -lcrypto -Wl,-Bdynamic -ldl -lpthread
 TARGET = onetimexor
 
 # file sorgente
-SRCS = oneTimeXOR.c
+SRCS = main.c
 
 # regola predefinita: compila il programma
 all: $(TARGET)
