@@ -1,5 +1,4 @@
 // Coded by Pietro Squilla
-// BETA crittografia negabile (padding uniforme) + gestione corretta e definitiva dei file temporanei
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
