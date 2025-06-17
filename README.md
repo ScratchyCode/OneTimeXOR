@@ -6,7 +6,7 @@
 
 * **Cifratura robusta**: I dati vengono cifrati usando l'algoritmo **AES-256 in modalità CTR (Counter)** per generare una sequenza di bit pseudocasuali. Questo lo trasforma in un cifrario a flusso che non richiede padding e ha eccellenti performance perchè la generazione di bit casuali è parallelizzabile. Una volta ottenuto questo keystream viene usato per cifrare byte a byte il file in chiaro con il semplice XOR logico.
 * **Autenticazione forte**: Implementa lo schema **Encrypt-then-MAC**. Dopo la cifratura, un "sigillo" di autenticazione viene generato usando **HMAC-SHA256**, rendendo impossibile per un malintenzionato modificare il file cifrato o il sigillo senza essere scoperto.
-* **Derivazione sicura della chiave**: Le chiavi di cifratura non vengono mai derivate direttamente dalla password. Si utilizza l'algoritmo **PBKDF2** con **600.000 iterazioni** e un `salt` casuale per ogni file, rendendo gli attacchi a forza bruta sulla password estremamente lenti e costosi.
+* **Derivazione sicura della chiave**: Le chiavi di cifratura non vengono mai derivate direttamente dalla password. Si utilizza l'algoritmo **PBKDF2** con **600 mila iterazioni** e un `salt` casuale per ogni file, rendendo gli attacchi a forza bruta sulla password estremamente lenti e costosi.
 * **Protezione da errori utente**:
     * Chiede conferma prima di **sovrascrivere** un file esistente.
     * Richiede l'**inserimento doppio della password** in fase di cifratura per prevenire errori di battitura che renderebbero il file irrecuperabile.
