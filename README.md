@@ -18,7 +18,7 @@
 
 ## Come Funziona
 
-Il programma segue un flusso logico e sicuro per proteggere i dati.
+Il programma segue un flusso logico e sicuro e noto in letteratura per proteggere i dati.
 
 ### Processo di Cifratura
 
