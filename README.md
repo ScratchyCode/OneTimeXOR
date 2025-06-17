@@ -2,6 +2,8 @@
 
 **OneTimeXor** è uno strumento a riga di comando, scritto in C, per la cifratura e l'autenticazione sicura di file. Si ispira a cifrari OTP come Vernam, rendendone l'implementazione più pratica attraverso algoritmi crittografici moderni per garantire la confidenzialità, l'integrità e l'autenticità dei dati.
 
+A differenza di un OTP propriamente detto (che ha una sicurezza incondizionata), si arriva ad uno standard robusto perchè anche nel caso in cui la password si ripete c'è il nonce che cambia la chiave crittografica per ogni file, come se fosse effettivamente Vernam a livello di codifica. L'unica cosa diversa è la mancanza di vera casualità, in favore della riproducibilità tramite password (cioè sicurezza computazionale, diverso da sicurezza incondizionata).
+
 ## Funzionalità principali
 
 * **Cifratura robusta**: I dati vengono cifrati usando l'algoritmo **AES-256 in modalità CTR (Counter)** per generare una sequenza di bit pseudocasuali. Questo lo trasforma in un cifrario a flusso che non richiede padding e ha eccellenti performance perchè la generazione di bit casuali è parallelizzabile. Una volta ottenuto questo keystream viene usato per cifrare byte a byte il file in chiaro con il semplice XOR logico.
